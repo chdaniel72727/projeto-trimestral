@@ -1,0 +1,115 @@
+ /* Reset e estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Cabeçalho */
+        .logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .logo img {
+            max-width: 180px;
+            height: auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #107c10;
+            margin: 20px 0;
+            font-size: 2rem;
+        }
+        
+        /* Container de consoles */
+        .consoles-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Cards de console */
+        .console {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .console:hover {
+            transform: translateY(-5px);
+        }
+        
+        .console h2 {
+            color: #107c10;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .console img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .console ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .console li {
+            margin-bottom: 5px;
+        }
+        
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #e5e5e5;
+            border-radius: 8px;
+        }
+        
+        .voltar {
+            margin-top: 10px;
+        }
+        
+        .voltar a {
+            color: #107c10;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .voltar a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsividade para telas pequenas */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .console {
+                padding: 15px;
+            }
+        }
